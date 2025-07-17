@@ -1,0 +1,727 @@
+2025-07-17 01:35:22.507  INFO 24256 --- [main] c.M.BatchApp.BatchAppApplicationTests    : Starting BatchAppApplicationTests using Java 17.0.15 on USGURBHANPRAS68 with PID 24256 (started by bhanuprasingh in C:\Users\bhanuprasingh\Desktop\Personal Code\BatchApp)
+2025-07-17 01:35:22.511  INFO 24256 --- [main] c.M.BatchApp.BatchAppApplicationTests    : No active profile set, falling back to 1 default profile: "default"
+2025-07-17 01:35:23.688  WARN 24256 --- [main] s.c.a.AnnotationConfigApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.support.BeanDefinitionOverrideException: Invalid bean definition with name 'userTransferJob' defined in class path resource [com/MultiThreadedBatch/BatchApp/job/UserTransferJob.class]: Cannot register bean definition [Root bean: class [null]; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=userTransferJob; factoryMethodName=userTransferJob; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/MultiThreadedBatch/BatchApp/job/UserTransferJob.class]] for bean 'userTransferJob': There is already [Generic bean: class [com.MultiThreadedBatch.BatchApp.job.UserTransferBatchJob]; scope=singleton; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [C:\Users\bhanuprasingh\Desktop\Personal Code\BatchApp\target\classes\com\MultiThreadedBatch\BatchApp\job\UserTransferJob.class]] bound.
+2025-07-17 01:35:23.706  INFO 24256 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2025-07-17 01:35:23.758 ERROR 24256 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The bean 'userTransferJob', defined in class path resource [com/MultiThreadedBatch/BatchApp/job/UserTransferJob.class], could not be registered. A bean with that name has already been defined in file [C:\Users\bhanuprasingh\Desktop\Personal Code\BatchApp\target\classes\com\MultiThreadedBatch\BatchApp\job\UserTransferJob.class] and overriding is disabled.
+
+Action:
+
+Consider renaming one of the beans or enabling overriding by setting spring.main.allow-bean-definition-overriding=true
+
+2025-07-17 01:35:23.841  INFO 24256 --- [main] c.M.BatchApp.BatchAppApplicationTests    : Starting BatchAppApplicationTests using Java 17.0.15 on USGURBHANPRAS68 with PID 24256 (started by bhanuprasingh in C:\Users\bhanuprasingh\Desktop\Personal Code\BatchApp)
+2025-07-17 01:35:23.843  INFO 24256 --- [main] c.M.BatchApp.BatchAppApplicationTests    : No active profile set, falling back to 1 default profile: "default"
+2025-07-17 01:35:24.113  WARN 24256 --- [main] s.c.a.AnnotationConfigApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.support.BeanDefinitionOverrideException: Invalid bean definition with name 'userTransferJob' defined in class path resource [com/MultiThreadedBatch/BatchApp/job/UserTransferJob.class]: Cannot register bean definition [Root bean: class [null]; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=userTransferJob; factoryMethodName=userTransferJob; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/MultiThreadedBatch/BatchApp/job/UserTransferJob.class]] for bean 'userTransferJob': There is already [Generic bean: class [com.MultiThreadedBatch.BatchApp.job.UserTransferBatchJob]; scope=singleton; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [C:\Users\bhanuprasingh\Desktop\Personal Code\BatchApp\target\classes\com\MultiThreadedBatch\BatchApp\job\UserTransferJob.class]] bound.
+2025-07-17 01:35:24.117  INFO 24256 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2025-07-17 01:35:24.122 ERROR 24256 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The bean 'userTransferJob', defined in class path resource [com/MultiThreadedBatch/BatchApp/job/UserTransferJob.class], could not be registered. A bean with that name has already been defined in file [C:\Users\bhanuprasingh\Desktop\Personal Code\BatchApp\target\classes\com\MultiThreadedBatch\BatchApp\job\UserTransferJob.class] and overriding is disabled.
+
+Action:
+
+Consider renaming one of the beans or enabling overriding by setting spring.main.allow-bean-definition-overriding=true
+
+2025-07-17 01:35:24.157 ERROR 24256 --- [main] o.s.test.context.TestContextManager      : Caught exception while allowing TestExecutionListener [org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@ae3540e] to prepare test instance [com.MultiThreadedBatch.BatchApp.BatchAppApplicationTests@7a55af6b]
+
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:98) ~[spring-test-5.3.29.jar:5.3.29]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124) ~[spring-test-5.3.29.jar:5.3.29]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:118) ~[spring-test-5.3.29.jar:5.3.29]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83) ~[spring-test-5.3.29.jar:5.3.29]
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.prepareTestInstance(SpringBootDependencyInjectionTestExecutionListener.java:43) ~[spring-boot-test-autoconfigure-2.7.14.jar:2.7.14]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:248) ~[spring-test-5.3.29.jar:5.3.29]
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:138) ~[spring-test-5.3.29.jar:5.3.29]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$8(ClassBasedTestDescriptor.java:363) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:368) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$9(ClassBasedTestDescriptor.java:363) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179) ~[na:na]
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[na:na]
+	at java.base/java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:310) ~[na:na]
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:735) ~[na:na]
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:734) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762) ~[na:na]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:362) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$6(ClassBasedTestDescriptor.java:283) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:282) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$4(ClassBasedTestDescriptor.java:272) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at java.base/java.util.Optional.orElseGet(Optional.java:364) ~[na:na]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$5(ClassBasedTestDescriptor.java:271) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:31) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:102) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:101) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:66) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$2(NodeTestTask.java:123) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:123) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:90) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) ~[na:na]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) ~[na:na]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:220) ~[junit-platform-launcher-1.3.1.jar:1.3.1]
+	at org.junit.platform.launcher.core.DefaultLauncher.lambda$execute$6(DefaultLauncher.java:188) ~[junit-platform-launcher-1.3.1.jar:1.3.1]
+	at org.junit.platform.launcher.core.DefaultLauncher.withInterceptedStreams(DefaultLauncher.java:202) ~[junit-platform-launcher-1.3.1.jar:1.3.1]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:181) ~[junit-platform-launcher-1.3.1.jar:1.3.1]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:128) ~[junit-platform-launcher-1.3.1.jar:1.3.1]
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:150) ~[surefire-junit-platform-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:124) ~[surefire-junit-platform-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384) ~[surefire-booter-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345) ~[surefire-booter-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126) ~[surefire-booter-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418) ~[surefire-booter-2.22.2.jar:2.22.2]
+Caused by: org.springframework.beans.factory.support.BeanDefinitionOverrideException: Invalid bean definition with name 'userTransferJob' defined in class path resource [com/MultiThreadedBatch/BatchApp/job/UserTransferJob.class]: Cannot register bean definition [Root bean: class [null]; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=userTransferJob; factoryMethodName=userTransferJob; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/MultiThreadedBatch/BatchApp/job/UserTransferJob.class]] for bean 'userTransferJob': There is already [Generic bean: class [com.MultiThreadedBatch.BatchApp.job.UserTransferBatchJob]; scope=singleton; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [C:\Users\bhanuprasingh\Desktop\Personal Code\BatchApp\target\classes\com\MultiThreadedBatch\BatchApp\job\UserTransferJob.class]] bound.
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.registerBeanDefinition(DefaultListableBeanFactory.java:1006) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForBeanMethod(ConfigurationClassBeanDefinitionReader.java:295) ~[spring-context-5.3.29.jar:5.3.29]
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForConfigurationClass(ConfigurationClassBeanDefinitionReader.java:153) ~[spring-context-5.3.29.jar:5.3.29]
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitions(ConfigurationClassBeanDefinitionReader.java:129) ~[spring-context-5.3.29.jar:5.3.29]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:343) ~[spring-context-5.3.29.jar:5.3.29]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:247) ~[spring-context-5.3.29.jar:5.3.29]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:311) ~[spring-context-5.3.29.jar:5.3.29]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:112) ~[spring-context-5.3.29.jar:5.3.29]
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:748) ~[spring-context-5.3.29.jar:5.3.29]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:564) ~[spring-context-5.3.29.jar:5.3.29]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731) ~[spring-boot-2.7.14.jar:2.7.14]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) ~[spring-boot-2.7.14.jar:2.7.14]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) ~[spring-boot-2.7.14.jar:2.7.14]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:136) ~[spring-boot-test-2.7.14.jar:2.7.14]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:141) ~[spring-test-5.3.29.jar:5.3.29]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:90) ~[spring-test-5.3.29.jar:5.3.29]
+	... 68 common frames omitted
+
+2025-07-17 01:36:01.179  INFO 30220 --- [main] c.M.BatchApp.BatchAppApplicationTests    : Starting BatchAppApplicationTests using Java 17.0.15 on USGURBHANPRAS68 with PID 30220 (started by bhanuprasingh in C:\Users\bhanuprasingh\Desktop\Personal Code\BatchApp)
+2025-07-17 01:36:01.183  INFO 30220 --- [main] c.M.BatchApp.BatchAppApplicationTests    : No active profile set, falling back to 1 default profile: "default"
+2025-07-17 01:36:01.939  WARN 30220 --- [main] s.c.a.AnnotationConfigApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.support.BeanDefinitionOverrideException: Invalid bean definition with name 'userTransferJob' defined in class path resource [com/MultiThreadedBatch/BatchApp/job/UserTransferJob.class]: Cannot register bean definition [Root bean: class [null]; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=userTransferJob; factoryMethodName=userTransferJob; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/MultiThreadedBatch/BatchApp/job/UserTransferJob.class]] for bean 'userTransferJob': There is already [Generic bean: class [com.MultiThreadedBatch.BatchApp.job.UserTransferBatchJob]; scope=singleton; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [C:\Users\bhanuprasingh\Desktop\Personal Code\BatchApp\target\classes\com\MultiThreadedBatch\BatchApp\job\UserTransferJob.class]] bound.
+2025-07-17 01:36:01.954  INFO 30220 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2025-07-17 01:36:01.998 ERROR 30220 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The bean 'userTransferJob', defined in class path resource [com/MultiThreadedBatch/BatchApp/job/UserTransferJob.class], could not be registered. A bean with that name has already been defined in file [C:\Users\bhanuprasingh\Desktop\Personal Code\BatchApp\target\classes\com\MultiThreadedBatch\BatchApp\job\UserTransferJob.class] and overriding is disabled.
+
+Action:
+
+Consider renaming one of the beans or enabling overriding by setting spring.main.allow-bean-definition-overriding=true
+
+2025-07-17 01:36:02.094  INFO 30220 --- [main] c.M.BatchApp.BatchAppApplicationTests    : Starting BatchAppApplicationTests using Java 17.0.15 on USGURBHANPRAS68 with PID 30220 (started by bhanuprasingh in C:\Users\bhanuprasingh\Desktop\Personal Code\BatchApp)
+2025-07-17 01:36:02.095  INFO 30220 --- [main] c.M.BatchApp.BatchAppApplicationTests    : No active profile set, falling back to 1 default profile: "default"
+2025-07-17 01:36:02.365  WARN 30220 --- [main] s.c.a.AnnotationConfigApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.support.BeanDefinitionOverrideException: Invalid bean definition with name 'userTransferJob' defined in class path resource [com/MultiThreadedBatch/BatchApp/job/UserTransferJob.class]: Cannot register bean definition [Root bean: class [null]; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=userTransferJob; factoryMethodName=userTransferJob; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/MultiThreadedBatch/BatchApp/job/UserTransferJob.class]] for bean 'userTransferJob': There is already [Generic bean: class [com.MultiThreadedBatch.BatchApp.job.UserTransferBatchJob]; scope=singleton; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [C:\Users\bhanuprasingh\Desktop\Personal Code\BatchApp\target\classes\com\MultiThreadedBatch\BatchApp\job\UserTransferJob.class]] bound.
+2025-07-17 01:36:02.368  INFO 30220 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2025-07-17 01:36:02.374 ERROR 30220 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The bean 'userTransferJob', defined in class path resource [com/MultiThreadedBatch/BatchApp/job/UserTransferJob.class], could not be registered. A bean with that name has already been defined in file [C:\Users\bhanuprasingh\Desktop\Personal Code\BatchApp\target\classes\com\MultiThreadedBatch\BatchApp\job\UserTransferJob.class] and overriding is disabled.
+
+Action:
+
+Consider renaming one of the beans or enabling overriding by setting spring.main.allow-bean-definition-overriding=true
+
+2025-07-17 01:36:02.386 ERROR 30220 --- [main] o.s.test.context.TestContextManager      : Caught exception while allowing TestExecutionListener [org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@ae3540e] to prepare test instance [com.MultiThreadedBatch.BatchApp.BatchAppApplicationTests@7a55af6b]
+
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:98) ~[spring-test-5.3.29.jar:5.3.29]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124) ~[spring-test-5.3.29.jar:5.3.29]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:118) ~[spring-test-5.3.29.jar:5.3.29]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83) ~[spring-test-5.3.29.jar:5.3.29]
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.prepareTestInstance(SpringBootDependencyInjectionTestExecutionListener.java:43) ~[spring-boot-test-autoconfigure-2.7.14.jar:2.7.14]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:248) ~[spring-test-5.3.29.jar:5.3.29]
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:138) ~[spring-test-5.3.29.jar:5.3.29]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$8(ClassBasedTestDescriptor.java:363) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:368) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$9(ClassBasedTestDescriptor.java:363) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179) ~[na:na]
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[na:na]
+	at java.base/java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:310) ~[na:na]
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:735) ~[na:na]
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:734) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762) ~[na:na]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:362) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$6(ClassBasedTestDescriptor.java:283) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:282) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$4(ClassBasedTestDescriptor.java:272) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at java.base/java.util.Optional.orElseGet(Optional.java:364) ~[na:na]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$5(ClassBasedTestDescriptor.java:271) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:31) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:102) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:101) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:66) ~[junit-jupiter-engine-5.8.2.jar:5.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$2(NodeTestTask.java:123) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:123) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:90) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) ~[na:na]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) ~[na:na]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54) ~[junit-platform-engine-1.8.2.jar:1.8.2]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:220) ~[junit-platform-launcher-1.3.1.jar:1.3.1]
+	at org.junit.platform.launcher.core.DefaultLauncher.lambda$execute$6(DefaultLauncher.java:188) ~[junit-platform-launcher-1.3.1.jar:1.3.1]
+	at org.junit.platform.launcher.core.DefaultLauncher.withInterceptedStreams(DefaultLauncher.java:202) ~[junit-platform-launcher-1.3.1.jar:1.3.1]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:181) ~[junit-platform-launcher-1.3.1.jar:1.3.1]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:128) ~[junit-platform-launcher-1.3.1.jar:1.3.1]
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:150) ~[surefire-junit-platform-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:124) ~[surefire-junit-platform-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384) ~[surefire-booter-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345) ~[surefire-booter-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126) ~[surefire-booter-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418) ~[surefire-booter-2.22.2.jar:2.22.2]
+Caused by: org.springframework.beans.factory.support.BeanDefinitionOverrideException: Invalid bean definition with name 'userTransferJob' defined in class path resource [com/MultiThreadedBatch/BatchApp/job/UserTransferJob.class]: Cannot register bean definition [Root bean: class [null]; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=userTransferJob; factoryMethodName=userTransferJob; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/MultiThreadedBatch/BatchApp/job/UserTransferJob.class]] for bean 'userTransferJob': There is already [Generic bean: class [com.MultiThreadedBatch.BatchApp.job.UserTransferBatchJob]; scope=singleton; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [C:\Users\bhanuprasingh\Desktop\Personal Code\BatchApp\target\classes\com\MultiThreadedBatch\BatchApp\job\UserTransferJob.class]] bound.
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.registerBeanDefinition(DefaultListableBeanFactory.java:1006) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForBeanMethod(ConfigurationClassBeanDefinitionReader.java:295) ~[spring-context-5.3.29.jar:5.3.29]
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForConfigurationClass(ConfigurationClassBeanDefinitionReader.java:153) ~[spring-context-5.3.29.jar:5.3.29]
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitions(ConfigurationClassBeanDefinitionReader.java:129) ~[spring-context-5.3.29.jar:5.3.29]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:343) ~[spring-context-5.3.29.jar:5.3.29]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:247) ~[spring-context-5.3.29.jar:5.3.29]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:311) ~[spring-context-5.3.29.jar:5.3.29]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:112) ~[spring-context-5.3.29.jar:5.3.29]
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:748) ~[spring-context-5.3.29.jar:5.3.29]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:564) ~[spring-context-5.3.29.jar:5.3.29]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731) ~[spring-boot-2.7.14.jar:2.7.14]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) ~[spring-boot-2.7.14.jar:2.7.14]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) ~[spring-boot-2.7.14.jar:2.7.14]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:136) ~[spring-boot-test-2.7.14.jar:2.7.14]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:141) ~[spring-test-5.3.29.jar:5.3.29]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:90) ~[spring-test-5.3.29.jar:5.3.29]
+	... 68 common frames omitted
+
+2025-07-17 10:59:48.162  INFO 28492 --- [main] c.M.BatchApp.BatchAppApplication         : Starting BatchAppApplication using Java 17.0.15 on USGURBHANPRAS68 with PID 28492 (C:\Users\bhanuprasingh\Desktop\Personal Code\BatchApp\target\classes started by bhanuprasingh in C:\Users\bhanuprasingh\Desktop\Personal Code\BatchApp)
+2025-07-17 10:59:48.167  INFO 28492 --- [main] c.M.BatchApp.BatchAppApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-07-17 10:59:48.816  WARN 28492 --- [main] s.c.a.AnnotationConfigApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.support.BeanDefinitionOverrideException: Invalid bean definition with name 'userTransferJob' defined in class path resource [com/MultiThreadedBatch/BatchApp/job/UserTransferJob.class]: Cannot register bean definition [Root bean: class [null]; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=userTransferJob; factoryMethodName=userTransferJob; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/MultiThreadedBatch/BatchApp/job/UserTransferJob.class]] for bean 'userTransferJob': There is already [Generic bean: class [com.MultiThreadedBatch.BatchApp.job.UserTransferBatchJob]; scope=singleton; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [C:\Users\bhanuprasingh\Desktop\Personal Code\BatchApp\target\classes\com\MultiThreadedBatch\BatchApp\job\UserTransferJob.class]] bound.
+2025-07-17 10:59:48.833  INFO 28492 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2025-07-17 10:59:48.863 ERROR 28492 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The bean 'userTransferJob', defined in class path resource [com/MultiThreadedBatch/BatchApp/job/UserTransferJob.class], could not be registered. A bean with that name has already been defined in file [C:\Users\bhanuprasingh\Desktop\Personal Code\BatchApp\target\classes\com\MultiThreadedBatch\BatchApp\job\UserTransferJob.class] and overriding is disabled.
+
+Action:
+
+Consider renaming one of the beans or enabling overriding by setting spring.main.allow-bean-definition-overriding=true
+
+2025-07-17 11:02:22.961  INFO 27844 --- [main] c.M.BatchApp.BatchAppApplication         : Starting BatchAppApplication using Java 17.0.15 on USGURBHANPRAS68 with PID 27844 (C:\Users\bhanuprasingh\Desktop\Personal Code\BatchApp\target\classes started by bhanuprasingh in C:\Users\bhanuprasingh\Desktop\Personal Code\BatchApp)
+2025-07-17 11:02:22.965  INFO 27844 --- [main] c.M.BatchApp.BatchAppApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-07-17 11:02:23.280  WARN 27844 --- [main] s.c.a.AnnotationConfigApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.support.BeanDefinitionOverrideException: Invalid bean definition with name 'userTransferJob' defined in class path resource [com/MultiThreadedBatch/BatchApp/job/UserTransferJob.class]: Cannot register bean definition [Root bean: class [null]; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=userTransferJob; factoryMethodName=userTransferJob; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/MultiThreadedBatch/BatchApp/job/UserTransferJob.class]] for bean 'userTransferJob': There is already [Generic bean: class [com.MultiThreadedBatch.BatchApp.job.UserTransferBatchJob]; scope=singleton; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [C:\Users\bhanuprasingh\Desktop\Personal Code\BatchApp\target\classes\com\MultiThreadedBatch\BatchApp\job\UserTransferJob.class]] bound.
+2025-07-17 11:02:23.289  INFO 27844 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2025-07-17 11:02:23.302 ERROR 27844 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The bean 'userTransferJob', defined in class path resource [com/MultiThreadedBatch/BatchApp/job/UserTransferJob.class], could not be registered. A bean with that name has already been defined in file [C:\Users\bhanuprasingh\Desktop\Personal Code\BatchApp\target\classes\com\MultiThreadedBatch\BatchApp\job\UserTransferJob.class] and overriding is disabled.
+
+Action:
+
+Consider renaming one of the beans or enabling overriding by setting spring.main.allow-bean-definition-overriding=true
+
+2025-07-17 11:04:22.593  INFO 22424 --- [main] c.M.BatchApp.BatchAppApplication         : Starting BatchAppApplication using Java 17.0.15 on USGURBHANPRAS68 with PID 22424 (C:\Users\bhanuprasingh\Desktop\Personal Code\BatchApp\target\classes started by bhanuprasingh in C:\Users\bhanuprasingh\Desktop\Personal Code\BatchApp)
+2025-07-17 11:04:22.595  INFO 22424 --- [main] c.M.BatchApp.BatchAppApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-07-17 11:04:22.949  WARN 22424 --- [main] s.c.a.AnnotationConfigApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.support.BeanDefinitionOverrideException: Invalid bean definition with name 'userTransferJob' defined in class path resource [com/MultiThreadedBatch/BatchApp/job/UserTransferJob.class]: Cannot register bean definition [Root bean: class [null]; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=userTransferJob; factoryMethodName=userTransferJob; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/MultiThreadedBatch/BatchApp/job/UserTransferJob.class]] for bean 'userTransferJob': There is already [Generic bean: class [com.MultiThreadedBatch.BatchApp.job.UserTransferBatchJob]; scope=singleton; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [C:\Users\bhanuprasingh\Desktop\Personal Code\BatchApp\target\classes\com\MultiThreadedBatch\BatchApp\job\UserTransferJob.class]] bound.
+2025-07-17 11:04:22.955  INFO 22424 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2025-07-17 11:04:22.971 ERROR 22424 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The bean 'userTransferJob', defined in class path resource [com/MultiThreadedBatch/BatchApp/job/UserTransferJob.class], could not be registered. A bean with that name has already been defined in file [C:\Users\bhanuprasingh\Desktop\Personal Code\BatchApp\target\classes\com\MultiThreadedBatch\BatchApp\job\UserTransferJob.class] and overriding is disabled.
+
+Action:
+
+Consider renaming one of the beans or enabling overriding by setting spring.main.allow-bean-definition-overriding=true
+
+2025-07-17 11:05:02.944  INFO 17604 --- [main] c.M.BatchApp.BatchAppApplication         : Starting BatchAppApplication using Java 17.0.15 on USGURBHANPRAS68 with PID 17604 (C:\Users\bhanuprasingh\Desktop\Personal Code\BatchApp\target\classes started by bhanuprasingh in C:\Users\bhanuprasingh\Desktop\Personal Code\BatchApp)
+2025-07-17 11:05:02.950  INFO 17604 --- [main] c.M.BatchApp.BatchAppApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-07-17 11:05:03.931  INFO 17604 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-07-17 11:05:04.044  INFO 17604 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 102 ms. Found 1 JPA repository interfaces.
+2025-07-17 11:05:04.218  WARN 17604 --- [main] s.c.a.AnnotationConfigApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Invalid bean definition with name 'userTransferJob' defined in class path resource [com/MultiThreadedBatch/BatchApp/job/UserTransferJob.class]: factory-bean reference points back to the same bean definition
+2025-07-17 11:05:04.234  INFO 17604 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2025-07-17 11:05:04.272 ERROR 17604 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanDefinitionStoreException: Invalid bean definition with name 'userTransferJob' defined in class path resource [com/MultiThreadedBatch/BatchApp/job/UserTransferJob.class]: factory-bean reference points back to the same bean definition
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryMethod(AbstractAutowireCapableBeanFactory.java:743) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineTargetType(AbstractAutowireCapableBeanFactory.java:703) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.predictBeanType(AbstractAutowireCapableBeanFactory.java:674) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getType(AbstractBeanFactory.java:722) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findMergedAnnotationOnBean(DefaultListableBeanFactory.java:751) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAnnotationOnBean(DefaultListableBeanFactory.java:744) ~[spring-beans-5.3.29.jar:5.3.29]
+	at org.springframework.boot.sql.init.dependency.AnnotationDependsOnDatabaseInitializationDetector.detect(AnnotationDependsOnDatabaseInitializationDetector.java:36) ~[spring-boot-2.7.14.jar:2.7.14]
+	at org.springframework.boot.sql.init.dependency.DatabaseInitializationDependencyConfigurer$DependsOnDatabaseInitializationPostProcessor.detectDependsOnInitializationBeanNames(DatabaseInitializationDependencyConfigurer.java:148) ~[spring-boot-2.7.14.jar:2.7.14]
+	at org.springframework.boot.sql.init.dependency.DatabaseInitializationDependencyConfigurer$DependsOnDatabaseInitializationPostProcessor.postProcessBeanFactory(DatabaseInitializationDependencyConfigurer.java:111) ~[spring-boot-2.7.14.jar:2.7.14]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:325) ~[spring-context-5.3.29.jar:5.3.29]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:191) ~[spring-context-5.3.29.jar:5.3.29]
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:748) ~[spring-context-5.3.29.jar:5.3.29]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:564) ~[spring-context-5.3.29.jar:5.3.29]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731) ~[spring-boot-2.7.14.jar:2.7.14]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) ~[spring-boot-2.7.14.jar:2.7.14]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) ~[spring-boot-2.7.14.jar:2.7.14]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303) ~[spring-boot-2.7.14.jar:2.7.14]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292) ~[spring-boot-2.7.14.jar:2.7.14]
+	at com.MultiThreadedBatch.BatchApp.BatchAppApplication.main(BatchAppApplication.java:10) ~[classes/:na]
+
+2025-07-17 11:07:47.738  INFO 2320 --- [main] c.M.BatchApp.BatchAppApplication         : Starting BatchAppApplication using Java 17.0.15 on USGURBHANPRAS68 with PID 2320 (C:\Users\bhanuprasingh\Desktop\Personal Code\BatchApp\target\classes started by bhanuprasingh in C:\Users\bhanuprasingh\Desktop\Personal Code\BatchApp)
+2025-07-17 11:07:47.740  INFO 2320 --- [main] c.M.BatchApp.BatchAppApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-07-17 11:07:48.157  WARN 2320 --- [main] s.c.a.AnnotationConfigApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.support.BeanDefinitionOverrideException: Invalid bean definition with name 'userTransferJob' defined in class path resource [com/MultiThreadedBatch/BatchApp/job/UserTransferJob.class]: Cannot register bean definition [Root bean: class [null]; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=userTransferJob; factoryMethodName=userTransferJob; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/MultiThreadedBatch/BatchApp/job/UserTransferJob.class]] for bean 'userTransferJob': There is already [Generic bean: class [com.MultiThreadedBatch.BatchApp.job.UserTransferBatchJob]; scope=singleton; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [C:\Users\bhanuprasingh\Desktop\Personal Code\BatchApp\target\classes\com\MultiThreadedBatch\BatchApp\job\UserTransferJob.class]] bound.
+2025-07-17 11:07:48.167  INFO 2320 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2025-07-17 11:07:48.184 ERROR 2320 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The bean 'userTransferJob', defined in class path resource [com/MultiThreadedBatch/BatchApp/job/UserTransferJob.class], could not be registered. A bean with that name has already been defined in file [C:\Users\bhanuprasingh\Desktop\Personal Code\BatchApp\target\classes\com\MultiThreadedBatch\BatchApp\job\UserTransferJob.class] and overriding is disabled.
+
+Action:
+
+Consider renaming one of the beans or enabling overriding by setting spring.main.allow-bean-definition-overriding=true
+
+2025-07-17 11:13:25.457  INFO 30608 --- [main] c.M.BatchApp.BatchAppApplication         : Starting BatchAppApplication using Java 17.0.15 on USGURBHANPRAS68 with PID 30608 (C:\Users\bhanuprasingh\Desktop\Personal Code\BatchApp\target\classes started by bhanuprasingh in C:\Users\bhanuprasingh\Desktop\Personal Code\BatchApp)
+2025-07-17 11:13:25.460  INFO 30608 --- [main] c.M.BatchApp.BatchAppApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-07-17 11:13:26.242  INFO 30608 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-07-17 11:13:26.355  INFO 30608 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 94 ms. Found 1 JPA repository interfaces.
+2025-07-17 11:13:26.904  INFO 30608 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-07-17 11:13:27.954  INFO 30608 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-07-17 11:13:28.368  INFO 30608 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-07-17 11:13:28.535  INFO 30608 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.15.Final
+2025-07-17 11:13:28.905  INFO 30608 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2025-07-17 11:13:29.175  INFO 30608 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2025-07-17 11:13:30.140  INFO 30608 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-07-17 11:13:30.155  INFO 30608 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-07-17 11:13:30.810  WARN 30608 --- [main] o.s.b.a.batch.JpaBatchConfigurer         : JPA does not support custom isolation levels, so locks may not be taken when launching Jobs. To silence this warning, set 'spring.batch.jdbc.isolation-level-for-create' to 'default'.
+2025-07-17 11:13:30.830  INFO 30608 --- [main] o.s.b.c.r.s.JobRepositoryFactoryBean     : No database type set, using meta data indicating: MYSQL
+2025-07-17 11:13:31.126  INFO 30608 --- [main] o.s.b.c.l.support.SimpleJobLauncher      : No TaskExecutor has been set, defaulting to synchronous executor.
+2025-07-17 11:13:31.258  INFO 30608 --- [main] c.M.BatchApp.BatchAppApplication         : Started BatchAppApplication in 6.383 seconds (JVM running for 7.556)
+2025-07-17 11:13:31.263  INFO 30608 --- [main] o.s.b.a.b.JobLauncherApplicationRunner   : Running default command line with: []
+2025-07-17 11:13:31.428  INFO 30608 --- [main] o.s.b.c.l.support.SimpleJobLauncher      : Job: [FlowJob: [name=userTransferJob]] launched with the following parameters: [{run.id=1}]
+2025-07-17 11:13:31.481  INFO 30608 --- [main] c.M.B.listener.UserTransferJobListener   : Job started: userTransferJob (ID: 12)
+2025-07-17 11:13:31.481  INFO 30608 --- [main] c.M.B.listener.UserTransferJobListener   : Thread pool size: 0, Active threads: 0, Queue size: 0
+2025-07-17 11:13:31.528  INFO 30608 --- [main] o.s.batch.core.job.SimpleStepHandler     : Executing step: [partitionerUserStep]
+2025-07-17 11:13:33.121  INFO 30608 --- [threadPoolTaskExecutor-4] o.s.batch.core.step.AbstractStep         : Step: [userProcessingStep:partition3] executed in 1s333ms
+2025-07-17 11:13:33.168  INFO 30608 --- [threadPoolTaskExecutor-3] o.s.batch.core.step.AbstractStep         : Step: [userProcessingStep:partition4] executed in 1s382ms
+2025-07-17 11:13:33.257  INFO 30608 --- [threadPoolTaskExecutor-9] o.s.batch.core.step.AbstractStep         : Step: [userProcessingStep:partition2] executed in 1s468ms
+2025-07-17 11:13:33.268  INFO 30608 --- [threadPoolTaskExecutor-7] o.s.batch.core.step.AbstractStep         : Step: [userProcessingStep:partition9] executed in 1s480ms
+2025-07-17 11:13:33.275  INFO 30608 --- [threadPoolTaskExecutor-10] o.s.batch.core.step.AbstractStep         : Step: [userProcessingStep:partition8] executed in 1s485ms
+2025-07-17 11:13:33.296  INFO 30608 --- [threadPoolTaskExecutor-1] o.s.batch.core.step.AbstractStep         : Step: [userProcessingStep:partition7] executed in 1s510ms
+2025-07-17 11:13:33.321  INFO 30608 --- [threadPoolTaskExecutor-2] o.s.batch.core.step.AbstractStep         : Step: [userProcessingStep:partition6] executed in 1s535ms
+2025-07-17 11:13:33.322  INFO 30608 --- [threadPoolTaskExecutor-6] o.s.batch.core.step.AbstractStep         : Step: [userProcessingStep:partition0] executed in 1s534ms
+2025-07-17 11:13:33.332  INFO 30608 --- [threadPoolTaskExecutor-5] o.s.batch.core.step.AbstractStep         : Step: [userProcessingStep:partition5] executed in 1s544ms
+2025-07-17 11:13:33.426  INFO 30608 --- [threadPoolTaskExecutor-8] o.s.batch.core.step.AbstractStep         : Step: [userProcessingStep:partition1] executed in 1s638ms
+2025-07-17 11:13:33.454  INFO 30608 --- [main] o.s.batch.core.step.AbstractStep         : Step: [partitionerUserStep] executed in 1s926ms
+2025-07-17 11:13:33.488  INFO 30608 --- [main] c.M.B.listener.UserTransferJobListener   : Job completed successfully. (ID: 12)
+2025-07-17 11:13:33.488  INFO 30608 --- [main] c.M.B.listener.UserTransferJobListener   : No active threads. Initiating thread pool shutdown.
+2025-07-17 11:13:33.488  INFO 30608 --- [main] c.M.B.listener.UserTransferJobListener   : Thread pool shutdown complete.
+2025-07-17 11:13:33.514  INFO 30608 --- [main] o.s.b.c.l.support.SimpleJobLauncher      : Job: [FlowJob: [name=userTransferJob]] completed with the following parameters: [{run.id=1}] and the following status: [COMPLETED] in 2s31ms
+2025-07-17 11:13:33.524  INFO 30608 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-07-17 11:13:33.530  INFO 30608 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-07-17 11:13:33.562  INFO 30608 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-07-17 11:27:01.163  INFO 30916 --- [main] c.M.BatchApp.BatchAppApplication         : Starting BatchAppApplication using Java 17.0.15 on USGURBHANPRAS68 with PID 30916 (C:\Users\bhanuprasingh\Desktop\Personal Code\BatchApp\target\classes started by bhanuprasingh in C:\Users\bhanuprasingh\Desktop\Personal Code\BatchApp)
+2025-07-17 11:27:01.167  INFO 30916 --- [main] c.M.BatchApp.BatchAppApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-07-17 11:27:02.251  INFO 30916 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-07-17 11:27:02.390  INFO 30916 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 114 ms. Found 1 JPA repository interfaces.
+2025-07-17 11:27:02.979  INFO 30916 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-07-17 11:27:03.984  INFO 30916 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-07-17 11:27:04.399  INFO 30916 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-07-17 11:27:04.562  INFO 30916 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.15.Final
+2025-07-17 11:27:04.980  INFO 30916 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2025-07-17 11:27:05.250  INFO 30916 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2025-07-17 11:27:06.123  INFO 30916 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-07-17 11:27:06.142  INFO 30916 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-07-17 11:27:06.871  WARN 30916 --- [main] o.s.b.a.batch.JpaBatchConfigurer         : JPA does not support custom isolation levels, so locks may not be taken when launching Jobs. To silence this warning, set 'spring.batch.jdbc.isolation-level-for-create' to 'default'.
+2025-07-17 11:27:06.891  INFO 30916 --- [main] o.s.b.c.r.s.JobRepositoryFactoryBean     : No database type set, using meta data indicating: MYSQL
+2025-07-17 11:27:07.230  INFO 30916 --- [main] o.s.b.c.l.support.SimpleJobLauncher      : No TaskExecutor has been set, defaulting to synchronous executor.
+2025-07-17 11:27:07.403  INFO 30916 --- [main] c.M.BatchApp.BatchAppApplication         : Started BatchAppApplication in 6.846 seconds (JVM running for 13.347)
+2025-07-17 11:27:07.407  INFO 30916 --- [main] o.s.b.a.b.JobLauncherApplicationRunner   : Running default command line with: []
+2025-07-17 11:27:07.735  INFO 30916 --- [main] o.s.b.c.l.support.SimpleJobLauncher      : Job: [FlowJob: [name=userTransferJob]] launched with the following parameters: [{run.id=2}]
+2025-07-17 11:27:07.805  INFO 30916 --- [main] c.M.B.listener.UserTransferJobListener   : Job started: userTransferJob (ID: 13)
+2025-07-17 11:27:07.806  INFO 30916 --- [main] c.M.B.listener.UserTransferJobListener   : Thread pool size: 0, Active threads: 0, Queue size: 0
+2025-07-17 11:27:07.879  INFO 30916 --- [main] o.s.batch.core.job.SimpleStepHandler     : Executing step: [partitionerUserStep]
+2025-07-17 11:27:09.517  INFO 30916 --- [threadPoolTaskExecutor-9] o.s.batch.core.step.AbstractStep         : Step: [userProcessingStep:partition0] executed in 1s269ms
+2025-07-17 11:27:09.529  INFO 30916 --- [threadPoolTaskExecutor-6] o.s.batch.core.step.AbstractStep         : Step: [userProcessingStep:partition2] executed in 1s283ms
+2025-07-17 11:27:09.582  INFO 30916 --- [threadPoolTaskExecutor-1] o.s.batch.core.step.AbstractStep         : Step: [userProcessingStep:partition3] executed in 1s337ms
+2025-07-17 11:27:09.606  INFO 30916 --- [threadPoolTaskExecutor-5] o.s.batch.core.step.AbstractStep         : Step: [userProcessingStep:partition6] executed in 1s360ms
+2025-07-17 11:27:09.640  INFO 30916 --- [threadPoolTaskExecutor-8] o.s.batch.core.step.AbstractStep         : Step: [userProcessingStep:partition8] executed in 1s393ms
+2025-07-17 11:27:09.676  INFO 30916 --- [threadPoolTaskExecutor-4] o.s.batch.core.step.AbstractStep         : Step: [userProcessingStep:partition1] executed in 1s430ms
+2025-07-17 11:27:09.728  INFO 30916 --- [threadPoolTaskExecutor-7] o.s.batch.core.step.AbstractStep         : Step: [userProcessingStep:partition4] executed in 1s481ms
+2025-07-17 11:27:09.737  INFO 30916 --- [threadPoolTaskExecutor-10] o.s.batch.core.step.AbstractStep         : Step: [userProcessingStep:partition5] executed in 1s489ms
+2025-07-17 11:27:09.738  INFO 30916 --- [threadPoolTaskExecutor-2] o.s.batch.core.step.AbstractStep         : Step: [userProcessingStep:partition7] executed in 1s493ms
+2025-07-17 11:27:09.791  INFO 30916 --- [threadPoolTaskExecutor-3] o.s.batch.core.step.AbstractStep         : Step: [userProcessingStep:partition9] executed in 1s546ms
+2025-07-17 11:27:09.828  INFO 30916 --- [main] o.s.batch.core.step.AbstractStep         : Step: [partitionerUserStep] executed in 1s948ms
+2025-07-17 11:27:09.865  INFO 30916 --- [main] c.M.B.listener.UserTransferJobListener   : Job completed successfully. (ID: 13)
+2025-07-17 11:27:09.865  INFO 30916 --- [main] c.M.B.listener.UserTransferJobListener   : No active threads. Initiating thread pool shutdown.
+2025-07-17 11:27:09.866  INFO 30916 --- [main] c.M.B.listener.UserTransferJobListener   : Thread pool shutdown complete.
+2025-07-17 11:27:09.892  INFO 30916 --- [main] o.s.b.c.l.support.SimpleJobLauncher      : Job: [FlowJob: [name=userTransferJob]] completed with the following parameters: [{run.id=2}] and the following status: [COMPLETED] in 2s90ms
+2025-07-17 11:27:09.902  INFO 30916 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-07-17 11:27:09.909  INFO 30916 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-07-17 11:27:09.939  INFO 30916 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-07-17 11:30:12.689  INFO 25300 --- [main] c.M.BatchApp.BatchAppApplication         : Starting BatchAppApplication using Java 17.0.15 on USGURBHANPRAS68 with PID 25300 (C:\Users\bhanuprasingh\Desktop\Personal Code\BatchApp\target\classes started by bhanuprasingh in C:\Users\bhanuprasingh\Desktop\Personal Code\BatchApp)
+2025-07-17 11:30:12.697  INFO 25300 --- [main] c.M.BatchApp.BatchAppApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-07-17 11:30:13.916  INFO 25300 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-07-17 11:30:14.063  INFO 25300 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 126 ms. Found 1 JPA repository interfaces.
+2025-07-17 11:30:14.720  INFO 25300 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-07-17 11:30:15.629  INFO 25300 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-07-17 11:30:16.099  INFO 25300 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-07-17 11:30:16.275  INFO 25300 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.15.Final
+2025-07-17 11:30:16.895  INFO 25300 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2025-07-17 11:30:17.228  INFO 25300 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2025-07-17 11:30:18.646  INFO 25300 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-07-17 11:30:18.674  INFO 25300 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-07-17 11:30:19.576  WARN 25300 --- [main] o.s.b.a.batch.JpaBatchConfigurer         : JPA does not support custom isolation levels, so locks may not be taken when launching Jobs. To silence this warning, set 'spring.batch.jdbc.isolation-level-for-create' to 'default'.
+2025-07-17 11:30:19.595  INFO 25300 --- [main] o.s.b.c.r.s.JobRepositoryFactoryBean     : No database type set, using meta data indicating: MYSQL
+2025-07-17 11:30:19.966  INFO 25300 --- [main] o.s.b.c.l.support.SimpleJobLauncher      : No TaskExecutor has been set, defaulting to synchronous executor.
+2025-07-17 11:30:20.187  INFO 25300 --- [main] c.M.BatchApp.BatchAppApplication         : Started BatchAppApplication in 8.689 seconds (JVM running for 9.469)
+2025-07-17 11:30:20.194  INFO 25300 --- [main] o.s.b.a.b.JobLauncherApplicationRunner   : Running default command line with: []
+2025-07-17 11:30:20.570  INFO 25300 --- [main] o.s.b.c.l.support.SimpleJobLauncher      : Job: [FlowJob: [name=userTransferJob]] launched with the following parameters: [{run.id=3}]
+2025-07-17 11:30:20.641  INFO 25300 --- [main] c.M.B.listener.UserTransferJobListener   : Job started: userTransferJob (ID: 14)
+2025-07-17 11:30:20.641  INFO 25300 --- [main] c.M.B.listener.UserTransferJobListener   : Thread pool size: 0, Active threads: 0, Queue size: 0
+2025-07-17 11:30:20.719  INFO 25300 --- [main] o.s.batch.core.job.SimpleStepHandler     : Executing step: [partitionerUserStep]
+2025-07-17 11:30:21.346  INFO 25300 --- [threadPoolTaskExecutor-10] o.s.batch.core.step.AbstractStep         : Step: [userProcessingStep:partition5] executed in 202ms
+2025-07-17 11:30:21.355  INFO 25300 --- [threadPoolTaskExecutor-6] o.s.batch.core.step.AbstractStep         : Step: [userProcessingStep:partition3] executed in 213ms
+2025-07-17 11:30:22.335  INFO 25300 --- [threadPoolTaskExecutor-9] o.s.batch.core.step.AbstractStep         : Step: [userProcessingStep:partition7] executed in 1s192ms
+2025-07-17 11:30:22.884  INFO 25300 --- [threadPoolTaskExecutor-2] o.s.batch.core.step.AbstractStep         : Step: [userProcessingStep:partition0] executed in 1s744ms
+2025-07-17 11:30:22.894  INFO 25300 --- [threadPoolTaskExecutor-1] o.s.batch.core.step.AbstractStep         : Step: [userProcessingStep:partition9] executed in 1s760ms
+2025-07-17 11:30:22.914  INFO 25300 --- [threadPoolTaskExecutor-8] o.s.batch.core.step.AbstractStep         : Step: [userProcessingStep:partition8] executed in 1s771ms
+2025-07-17 11:30:22.929  INFO 25300 --- [threadPoolTaskExecutor-7] o.s.batch.core.step.AbstractStep         : Step: [userProcessingStep:partition1] executed in 1s787ms
+2025-07-17 11:30:22.940  INFO 25300 --- [threadPoolTaskExecutor-4] o.s.batch.core.step.AbstractStep         : Step: [userProcessingStep:partition6] executed in 1s799ms
+2025-07-17 11:30:22.999  INFO 25300 --- [threadPoolTaskExecutor-5] o.s.batch.core.step.AbstractStep         : Step: [userProcessingStep:partition2] executed in 1s858ms
+2025-07-17 11:30:23.097  INFO 25300 --- [threadPoolTaskExecutor-3] o.s.batch.core.step.AbstractStep         : Step: [userProcessingStep:partition4] executed in 1s957ms
+2025-07-17 11:30:23.135  INFO 25300 --- [main] o.s.batch.core.step.AbstractStep         : Step: [partitionerUserStep] executed in 2s415ms
+2025-07-17 11:30:23.174  INFO 25300 --- [main] c.M.B.listener.UserTransferJobListener   : Job completed successfully. (ID: 14)
+2025-07-17 11:30:23.174  INFO 25300 --- [main] c.M.B.listener.UserTransferJobListener   : No active threads. Initiating thread pool shutdown.
+2025-07-17 11:30:23.175  INFO 25300 --- [main] c.M.B.listener.UserTransferJobListener   : Thread pool shutdown complete.
+2025-07-17 11:30:23.206  INFO 25300 --- [main] o.s.b.c.l.support.SimpleJobLauncher      : Job: [FlowJob: [name=userTransferJob]] completed with the following parameters: [{run.id=3}] and the following status: [COMPLETED] in 2s565ms
+2025-07-17 11:30:23.218  INFO 25300 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-07-17 11:30:23.227  INFO 25300 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-07-17 11:30:23.260  INFO 25300 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-07-17 11:31:29.910  INFO 26120 --- [main] c.M.BatchApp.BatchAppApplication         : Starting BatchAppApplication using Java 17.0.15 on USGURBHANPRAS68 with PID 26120 (C:\Users\bhanuprasingh\Desktop\Personal Code\BatchApp\target\classes started by bhanuprasingh in C:\Users\bhanuprasingh\Desktop\Personal Code\BatchApp)
+2025-07-17 11:31:29.916  INFO 26120 --- [main] c.M.BatchApp.BatchAppApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-07-17 11:31:30.744  INFO 26120 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-07-17 11:31:30.859  INFO 26120 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 99 ms. Found 1 JPA repository interfaces.
+2025-07-17 11:31:31.322  INFO 26120 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-07-17 11:31:32.108  INFO 26120 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-07-17 11:31:32.643  INFO 26120 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-07-17 11:31:32.789  INFO 26120 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.15.Final
+2025-07-17 11:31:33.173  INFO 26120 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2025-07-17 11:31:33.463  INFO 26120 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2025-07-17 11:31:34.618  INFO 26120 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-07-17 11:31:34.652  INFO 26120 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-07-17 11:31:35.781  WARN 26120 --- [main] o.s.b.a.batch.JpaBatchConfigurer         : JPA does not support custom isolation levels, so locks may not be taken when launching Jobs. To silence this warning, set 'spring.batch.jdbc.isolation-level-for-create' to 'default'.
+2025-07-17 11:31:35.809  INFO 26120 --- [main] o.s.b.c.r.s.JobRepositoryFactoryBean     : No database type set, using meta data indicating: MYSQL
+2025-07-17 11:31:36.411  INFO 26120 --- [main] o.s.b.c.l.support.SimpleJobLauncher      : No TaskExecutor has been set, defaulting to synchronous executor.
+2025-07-17 11:31:36.757  INFO 26120 --- [main] c.M.BatchApp.BatchAppApplication         : Started BatchAppApplication in 7.662 seconds (JVM running for 8.519)
+2025-07-17 11:31:36.766  INFO 26120 --- [main] o.s.b.a.b.JobLauncherApplicationRunner   : Running default command line with: []
+2025-07-17 11:31:37.289  INFO 26120 --- [main] o.s.b.c.l.support.SimpleJobLauncher      : Job: [FlowJob: [name=userTransferJob]] launched with the following parameters: [{run.id=4}]
+2025-07-17 11:31:37.356  INFO 26120 --- [main] c.M.B.listener.UserTransferJobListener   : Job started: userTransferJob (ID: 15)
+2025-07-17 11:31:37.357  INFO 26120 --- [main] c.M.B.listener.UserTransferJobListener   : Thread pool size: 0, Active threads: 0, Queue size: 0
+2025-07-17 11:31:37.459  INFO 26120 --- [main] o.s.batch.core.job.SimpleStepHandler     : Executing step: [partitionerUserStep]
+2025-07-17 11:31:39.358  INFO 26120 --- [threadPoolTaskExecutor-8] o.s.batch.core.step.AbstractStep         : Step: [userProcessingStep:partition0] executed in 1s88ms
+2025-07-17 11:31:39.539  INFO 26120 --- [threadPoolTaskExecutor-5] o.s.batch.core.step.AbstractStep         : Step: [userProcessingStep:partition6] executed in 1s271ms
+2025-07-17 11:31:39.546  INFO 26120 --- [threadPoolTaskExecutor-6] o.s.batch.core.step.AbstractStep         : Step: [userProcessingStep:partition17] executed in 1s277ms
+2025-07-17 11:31:39.548  INFO 26120 --- [threadPoolTaskExecutor-9] o.s.batch.core.step.AbstractStep         : Step: [userProcessingStep:partition3] executed in 1s277ms
+2025-07-17 11:31:39.594  INFO 26120 --- [threadPoolTaskExecutor-7] o.s.batch.core.step.AbstractStep         : Step: [userProcessingStep:partition2] executed in 1s325ms
+2025-07-17 11:31:39.625  INFO 26120 --- [threadPoolTaskExecutor-4] o.s.batch.core.step.AbstractStep         : Step: [userProcessingStep:partition18] executed in 1s358ms
+2025-07-17 11:31:39.642  INFO 26120 --- [threadPoolTaskExecutor-10] o.s.batch.core.step.AbstractStep         : Step: [userProcessingStep:partition11] executed in 1s371ms
+2025-07-17 11:31:39.748  INFO 26120 --- [threadPoolTaskExecutor-2] o.s.batch.core.step.AbstractStep         : Step: [userProcessingStep:partition13] executed in 1s481ms
+2025-07-17 11:31:39.787  INFO 26120 --- [threadPoolTaskExecutor-1] o.s.batch.core.step.AbstractStep         : Step: [userProcessingStep:partition12] executed in 1s520ms
+2025-07-17 11:31:39.845 ERROR 26120 --- [threadPoolTaskExecutor-10] o.s.batch.core.step.AbstractStep         : Encountered an error executing step userProcessingStep in job userTransferJob
+
+org.springframework.batch.item.file.NonTransientFlatFileException: Unable to read from resource: [class path resource [large_dataset.csv]]
+	at org.springframework.batch.item.file.FlatFileItemReader.readLine(FlatFileItemReader.java:226) ~[spring-batch-infrastructure-4.3.8.jar:4.3.8]
+	at org.springframework.batch.item.file.FlatFileItemReader.doRead(FlatFileItemReader.java:178) ~[spring-batch-infrastructure-4.3.8.jar:4.3.8]
+	at org.springframework.batch.item.support.AbstractItemCountingItemStreamItemReader.read(AbstractItemCountingItemStreamItemReader.java:93) ~[spring-batch-infrastructure-4.3.8.jar:4.3.8]
+	at org.springframework.batch.core.step.item.SimpleChunkProvider.doRead(SimpleChunkProvider.java:99) ~[spring-batch-core-4.3.10.jar:4.3.10]
+	at org.springframework.batch.core.step.item.SimpleChunkProvider.read(SimpleChunkProvider.java:180) ~[spring-batch-core-4.3.10.jar:4.3.10]
+	at org.springframework.batch.core.step.item.SimpleChunkProvider$1.doInIteration(SimpleChunkProvider.java:126) ~[spring-batch-core-4.3.10.jar:4.3.10]
+	at org.springframework.batch.repeat.support.RepeatTemplate.getNextResult(RepeatTemplate.java:375) ~[spring-batch-infrastructure-4.3.8.jar:4.3.8]
+	at org.springframework.batch.repeat.support.RepeatTemplate.executeInternal(RepeatTemplate.java:215) ~[spring-batch-infrastructure-4.3.8.jar:4.3.8]
+	at org.springframework.batch.repeat.support.RepeatTemplate.iterate(RepeatTemplate.java:145) ~[spring-batch-infrastructure-4.3.8.jar:4.3.8]
+	at org.springframework.batch.core.step.item.SimpleChunkProvider.provide(SimpleChunkProvider.java:118) ~[spring-batch-core-4.3.10.jar:4.3.10]
+	at org.springframework.batch.core.step.item.ChunkOrientedTasklet.execute(ChunkOrientedTasklet.java:71) ~[spring-batch-core-4.3.10.jar:4.3.10]
+	at org.springframework.batch.core.step.tasklet.TaskletStep$ChunkTransactionCallback.doInTransaction(TaskletStep.java:407) ~[spring-batch-core-4.3.10.jar:4.3.10]
+	at org.springframework.batch.core.step.tasklet.TaskletStep$ChunkTransactionCallback.doInTransaction(TaskletStep.java:331) ~[spring-batch-core-4.3.10.jar:4.3.10]
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:140) ~[spring-tx-5.3.29.jar:5.3.29]
+	at org.springframework.batch.core.step.tasklet.TaskletStep$2.doInChunkContext(TaskletStep.java:273) ~[spring-batch-core-4.3.10.jar:4.3.10]
+	at org.springframework.batch.core.scope.context.StepContextRepeatCallback.doInIteration(StepContextRepeatCallback.java:82) ~[spring-batch-core-4.3.10.jar:4.3.10]
+	at org.springframework.batch.repeat.support.RepeatTemplate.getNextResult(RepeatTemplate.java:375) ~[spring-batch-infrastructure-4.3.8.jar:4.3.8]
+	at org.springframework.batch.repeat.support.RepeatTemplate.executeInternal(RepeatTemplate.java:215) ~[spring-batch-infrastructure-4.3.8.jar:4.3.8]
+	at org.springframework.batch.repeat.support.RepeatTemplate.iterate(RepeatTemplate.java:145) ~[spring-batch-infrastructure-4.3.8.jar:4.3.8]
+	at org.springframework.batch.core.step.tasklet.TaskletStep.doExecute(TaskletStep.java:258) ~[spring-batch-core-4.3.10.jar:4.3.10]
+	at org.springframework.batch.core.step.AbstractStep.execute(AbstractStep.java:208) ~[spring-batch-core-4.3.10.jar:4.3.10]
+	at org.springframework.batch.core.partition.support.TaskExecutorPartitionHandler$1.call(TaskExecutorPartitionHandler.java:138) ~[spring-batch-core-4.3.10.jar:4.3.10]
+	at org.springframework.batch.core.partition.support.TaskExecutorPartitionHandler$1.call(TaskExecutorPartitionHandler.java:135) ~[spring-batch-core-4.3.10.jar:4.3.10]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+Caused by: java.io.IOException: Stream closed
+	at java.base/java.io.BufferedReader.ensureOpen(BufferedReader.java:123) ~[na:na]
+	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:321) ~[na:na]
+	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:396) ~[na:na]
+	at org.springframework.batch.item.file.FlatFileItemReader.readLine(FlatFileItemReader.java:207) ~[spring-batch-infrastructure-4.3.8.jar:4.3.8]
+	... 26 common frames omitted
+
+2025-07-17 11:31:39.867  INFO 26120 --- [threadPoolTaskExecutor-10] o.s.batch.core.step.AbstractStep         : Step: [userProcessingStep:partition19] executed in 175ms
+2025-07-17 11:31:39.943 ERROR 26120 --- [threadPoolTaskExecutor-1] o.s.batch.core.step.AbstractStep         : Encountered an error executing step userProcessingStep in job userTransferJob
+
+org.springframework.batch.item.file.NonTransientFlatFileException: Unable to read from resource: [class path resource [large_dataset.csv]]
+	at org.springframework.batch.item.file.FlatFileItemReader.readLine(FlatFileItemReader.java:226) ~[spring-batch-infrastructure-4.3.8.jar:4.3.8]
+	at org.springframework.batch.item.file.FlatFileItemReader.doRead(FlatFileItemReader.java:178) ~[spring-batch-infrastructure-4.3.8.jar:4.3.8]
+	at org.springframework.batch.item.support.AbstractItemCountingItemStreamItemReader.read(AbstractItemCountingItemStreamItemReader.java:93) ~[spring-batch-infrastructure-4.3.8.jar:4.3.8]
+	at org.springframework.batch.core.step.item.SimpleChunkProvider.doRead(SimpleChunkProvider.java:99) ~[spring-batch-core-4.3.10.jar:4.3.10]
+	at org.springframework.batch.core.step.item.SimpleChunkProvider.read(SimpleChunkProvider.java:180) ~[spring-batch-core-4.3.10.jar:4.3.10]
+	at org.springframework.batch.core.step.item.SimpleChunkProvider$1.doInIteration(SimpleChunkProvider.java:126) ~[spring-batch-core-4.3.10.jar:4.3.10]
+	at org.springframework.batch.repeat.support.RepeatTemplate.getNextResult(RepeatTemplate.java:375) ~[spring-batch-infrastructure-4.3.8.jar:4.3.8]
+	at org.springframework.batch.repeat.support.RepeatTemplate.executeInternal(RepeatTemplate.java:215) ~[spring-batch-infrastructure-4.3.8.jar:4.3.8]
+	at org.springframework.batch.repeat.support.RepeatTemplate.iterate(RepeatTemplate.java:145) ~[spring-batch-infrastructure-4.3.8.jar:4.3.8]
+	at org.springframework.batch.core.step.item.SimpleChunkProvider.provide(SimpleChunkProvider.java:118) ~[spring-batch-core-4.3.10.jar:4.3.10]
+	at org.springframework.batch.core.step.item.ChunkOrientedTasklet.execute(ChunkOrientedTasklet.java:71) ~[spring-batch-core-4.3.10.jar:4.3.10]
+	at org.springframework.batch.core.step.tasklet.TaskletStep$ChunkTransactionCallback.doInTransaction(TaskletStep.java:407) ~[spring-batch-core-4.3.10.jar:4.3.10]
+	at org.springframework.batch.core.step.tasklet.TaskletStep$ChunkTransactionCallback.doInTransaction(TaskletStep.java:331) ~[spring-batch-core-4.3.10.jar:4.3.10]
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:140) ~[spring-tx-5.3.29.jar:5.3.29]
+	at org.springframework.batch.core.step.tasklet.TaskletStep$2.doInChunkContext(TaskletStep.java:273) ~[spring-batch-core-4.3.10.jar:4.3.10]
+	at org.springframework.batch.core.scope.context.StepContextRepeatCallback.doInIteration(StepContextRepeatCallback.java:82) ~[spring-batch-core-4.3.10.jar:4.3.10]
+	at org.springframework.batch.repeat.support.RepeatTemplate.getNextResult(RepeatTemplate.java:375) ~[spring-batch-infrastructure-4.3.8.jar:4.3.8]
+	at org.springframework.batch.repeat.support.RepeatTemplate.executeInternal(RepeatTemplate.java:215) ~[spring-batch-infrastructure-4.3.8.jar:4.3.8]
+	at org.springframework.batch.repeat.support.RepeatTemplate.iterate(RepeatTemplate.java:145) ~[spring-batch-infrastructure-4.3.8.jar:4.3.8]
+	at org.springframework.batch.core.step.tasklet.TaskletStep.doExecute(TaskletStep.java:258) ~[spring-batch-core-4.3.10.jar:4.3.10]
+	at org.springframework.batch.core.step.AbstractStep.execute(AbstractStep.java:208) ~[spring-batch-core-4.3.10.jar:4.3.10]
+	at org.springframework.batch.core.partition.support.TaskExecutorPartitionHandler$1.call(TaskExecutorPartitionHandler.java:138) ~[spring-batch-core-4.3.10.jar:4.3.10]
+	at org.springframework.batch.core.partition.support.TaskExecutorPartitionHandler$1.call(TaskExecutorPartitionHandler.java:135) ~[spring-batch-core-4.3.10.jar:4.3.10]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+Caused by: java.io.IOException: Stream closed
+	at java.base/java.io.BufferedReader.ensureOpen(BufferedReader.java:123) ~[na:na]
+	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:321) ~[na:na]
+	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:396) ~[na:na]
+	at org.springframework.batch.item.file.FlatFileItemReader.readLine(FlatFileItemReader.java:207) ~[spring-batch-infrastructure-4.3.8.jar:4.3.8]
+	... 26 common frames omitted
+
+2025-07-17 11:31:39.972  INFO 26120 --- [threadPoolTaskExecutor-1] o.s.batch.core.step.AbstractStep         : Step: [userProcessingStep:partition1] executed in 139ms
+2025-07-17 11:31:40.006  INFO 26120 --- [threadPoolTaskExecutor-3] o.s.batch.core.step.AbstractStep         : Step: [userProcessingStep:partition9] executed in 1s739ms
+2025-07-17 11:31:40.086 ERROR 26120 --- [threadPoolTaskExecutor-10] o.s.batch.core.step.AbstractStep         : Encountered an error executing step userProcessingStep in job userTransferJob
+
+org.springframework.batch.item.file.NonTransientFlatFileException: Unable to read from resource: [class path resource [large_dataset.csv]]
+	at org.springframework.batch.item.file.FlatFileItemReader.readLine(FlatFileItemReader.java:226) ~[spring-batch-infrastructure-4.3.8.jar:4.3.8]
+	at org.springframework.batch.item.file.FlatFileItemReader.doRead(FlatFileItemReader.java:178) ~[spring-batch-infrastructure-4.3.8.jar:4.3.8]
+	at org.springframework.batch.item.support.AbstractItemCountingItemStreamItemReader.read(AbstractItemCountingItemStreamItemReader.java:93) ~[spring-batch-infrastructure-4.3.8.jar:4.3.8]
+	at org.springframework.batch.core.step.item.SimpleChunkProvider.doRead(SimpleChunkProvider.java:99) ~[spring-batch-core-4.3.10.jar:4.3.10]
+	at org.springframework.batch.core.step.item.SimpleChunkProvider.read(SimpleChunkProvider.java:180) ~[spring-batch-core-4.3.10.jar:4.3.10]
+	at org.springframework.batch.core.step.item.SimpleChunkProvider$1.doInIteration(SimpleChunkProvider.java:126) ~[spring-batch-core-4.3.10.jar:4.3.10]
+	at org.springframework.batch.repeat.support.RepeatTemplate.getNextResult(RepeatTemplate.java:375) ~[spring-batch-infrastructure-4.3.8.jar:4.3.8]
+	at org.springframework.batch.repeat.support.RepeatTemplate.executeInternal(RepeatTemplate.java:215) ~[spring-batch-infrastructure-4.3.8.jar:4.3.8]
+	at org.springframework.batch.repeat.support.RepeatTemplate.iterate(RepeatTemplate.java:145) ~[spring-batch-infrastructure-4.3.8.jar:4.3.8]
+	at org.springframework.batch.core.step.item.SimpleChunkProvider.provide(SimpleChunkProvider.java:118) ~[spring-batch-core-4.3.10.jar:4.3.10]
+	at org.springframework.batch.core.step.item.ChunkOrientedTasklet.execute(ChunkOrientedTasklet.java:71) ~[spring-batch-core-4.3.10.jar:4.3.10]
+	at org.springframework.batch.core.step.tasklet.TaskletStep$ChunkTransactionCallback.doInTransaction(TaskletStep.java:407) ~[spring-batch-core-4.3.10.jar:4.3.10]
+	at org.springframework.batch.core.step.tasklet.TaskletStep$ChunkTransactionCallback.doInTransaction(TaskletStep.java:331) ~[spring-batch-core-4.3.10.jar:4.3.10]
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:140) ~[spring-tx-5.3.29.jar:5.3.29]
+	at org.springframework.batch.core.step.tasklet.TaskletStep$2.doInChunkContext(TaskletStep.java:273) ~[spring-batch-core-4.3.10.jar:4.3.10]
+	at org.springframework.batch.core.scope.context.StepContextRepeatCallback.doInIteration(StepContextRepeatCallback.java:82) ~[spring-batch-core-4.3.10.jar:4.3.10]
+	at org.springframework.batch.repeat.support.RepeatTemplate.getNextResult(RepeatTemplate.java:375) ~[spring-batch-infrastructure-4.3.8.jar:4.3.8]
+	at org.springframework.batch.repeat.support.RepeatTemplate.executeInternal(RepeatTemplate.java:215) ~[spring-batch-infrastructure-4.3.8.jar:4.3.8]
+	at org.springframework.batch.repeat.support.RepeatTemplate.iterate(RepeatTemplate.java:145) ~[spring-batch-infrastructure-4.3.8.jar:4.3.8]
+	at org.springframework.batch.core.step.tasklet.TaskletStep.doExecute(TaskletStep.java:258) ~[spring-batch-core-4.3.10.jar:4.3.10]
+	at org.springframework.batch.core.step.AbstractStep.execute(AbstractStep.java:208) ~[spring-batch-core-4.3.10.jar:4.3.10]
+	at org.springframework.batch.core.partition.support.TaskExecutorPartitionHandler$1.call(TaskExecutorPartitionHandler.java:138) ~[spring-batch-core-4.3.10.jar:4.3.10]
+	at org.springframework.batch.core.partition.support.TaskExecutorPartitionHandler$1.call(TaskExecutorPartitionHandler.java:135) ~[spring-batch-core-4.3.10.jar:4.3.10]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+Caused by: java.io.IOException: Stream closed
+	at java.base/java.io.BufferedReader.ensureOpen(BufferedReader.java:123) ~[na:na]
+	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:321) ~[na:na]
+	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:396) ~[na:na]
+	at org.springframework.batch.item.file.FlatFileItemReader.readLine(FlatFileItemReader.java:207) ~[spring-batch-infrastructure-4.3.8.jar:4.3.8]
+	... 26 common frames omitted
+
+2025-07-17 11:31:40.115  INFO 26120 --- [threadPoolTaskExecutor-10] o.s.batch.core.step.AbstractStep         : Step: [userProcessingStep:partition5] executed in 195ms
+2025-07-17 11:31:40.187  INFO 26120 --- [threadPoolTaskExecutor-5] o.s.batch.core.step.AbstractStep         : Step: [userProcessingStep:partition10] executed in 595ms
+2025-07-17 11:31:40.245  INFO 26120 --- [threadPoolTaskExecutor-6] o.s.batch.core.step.AbstractStep         : Step: [userProcessingStep:partition4] executed in 653ms
+2025-07-17 11:31:40.384  INFO 26120 --- [threadPoolTaskExecutor-9] o.s.batch.core.step.AbstractStep         : Step: [userProcessingStep:partition7] executed in 792ms
+2025-07-17 11:31:41.444  INFO 26120 --- [threadPoolTaskExecutor-8] o.s.batch.core.step.AbstractStep         : Step: [userProcessingStep:partition14] executed in 2s38ms
+2025-07-17 11:31:41.593  INFO 26120 --- [threadPoolTaskExecutor-4] o.s.batch.core.step.AbstractStep         : Step: [userProcessingStep:partition16] executed in 1s930ms
+2025-07-17 11:31:41.608  INFO 26120 --- [threadPoolTaskExecutor-7] o.s.batch.core.step.AbstractStep         : Step: [userProcessingStep:partition15] executed in 1s965ms
+2025-07-17 11:31:41.678  INFO 26120 --- [threadPoolTaskExecutor-2] o.s.batch.core.step.AbstractStep         : Step: [userProcessingStep:partition8] executed in 1s877ms
+2025-07-17 11:31:41.708 ERROR 26120 --- [main] o.s.batch.core.step.AbstractStep         : Encountered an error executing step partitionerUserStep in job userTransferJob
+
+org.springframework.batch.core.JobExecutionException: Partition handler returned an unsuccessful step
+	at org.springframework.batch.core.partition.support.PartitionStep.doExecute(PartitionStep.java:112) ~[spring-batch-core-4.3.10.jar:4.3.10]
+	at org.springframework.batch.core.step.AbstractStep.execute(AbstractStep.java:208) ~[spring-batch-core-4.3.10.jar:4.3.10]
+	at org.springframework.batch.core.job.SimpleStepHandler.handleStep(SimpleStepHandler.java:152) ~[spring-batch-core-4.3.10.jar:4.3.10]
+	at org.springframework.batch.core.job.flow.JobFlowExecutor.executeStep(JobFlowExecutor.java:68) ~[spring-batch-core-4.3.10.jar:4.3.10]
+	at org.springframework.batch.core.job.flow.support.state.StepState.handle(StepState.java:68) ~[spring-batch-core-4.3.10.jar:4.3.10]
+	at org.springframework.batch.core.job.flow.support.SimpleFlow.resume(SimpleFlow.java:167) ~[spring-batch-core-4.3.10.jar:4.3.10]
+	at org.springframework.batch.core.job.flow.support.SimpleFlow.start(SimpleFlow.java:142) ~[spring-batch-core-4.3.10.jar:4.3.10]
+	at org.springframework.batch.core.job.flow.FlowJob.doExecute(FlowJob.java:139) ~[spring-batch-core-4.3.10.jar:4.3.10]
+	at org.springframework.batch.core.job.AbstractJob.execute(AbstractJob.java:320) ~[spring-batch-core-4.3.10.jar:4.3.10]
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher$1.run(SimpleJobLauncher.java:149) ~[spring-batch-core-4.3.10.jar:4.3.10]
+	at org.springframework.core.task.SyncTaskExecutor.execute(SyncTaskExecutor.java:50) ~[spring-core-5.3.29.jar:5.3.29]
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher.run(SimpleJobLauncher.java:140) ~[spring-batch-core-4.3.10.jar:4.3.10]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344) ~[spring-aop-5.3.29.jar:5.3.29]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198) ~[spring-aop-5.3.29.jar:5.3.29]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.3.29.jar:5.3.29]
+	at org.springframework.batch.core.configuration.annotation.SimpleBatchConfiguration$PassthruAdvice.invoke(SimpleBatchConfiguration.java:128) ~[spring-batch-core-4.3.10.jar:4.3.10]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.29.jar:5.3.29]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:241) ~[spring-aop-5.3.29.jar:5.3.29]
+	at jdk.proxy2/jdk.proxy2.$Proxy89.run(Unknown Source) ~[na:na]
+	at org.springframework.boot.autoconfigure.batch.JobLauncherApplicationRunner.execute(JobLauncherApplicationRunner.java:199) ~[spring-boot-autoconfigure-2.7.14.jar:2.7.14]
+	at org.springframework.boot.autoconfigure.batch.JobLauncherApplicationRunner.executeLocalJobs(JobLauncherApplicationRunner.java:173) ~[spring-boot-autoconfigure-2.7.14.jar:2.7.14]
+	at org.springframework.boot.autoconfigure.batch.JobLauncherApplicationRunner.launchJobFromProperties(JobLauncherApplicationRunner.java:160) ~[spring-boot-autoconfigure-2.7.14.jar:2.7.14]
+	at org.springframework.boot.autoconfigure.batch.JobLauncherApplicationRunner.run(JobLauncherApplicationRunner.java:155) ~[spring-boot-autoconfigure-2.7.14.jar:2.7.14]
+	at org.springframework.boot.autoconfigure.batch.JobLauncherApplicationRunner.run(JobLauncherApplicationRunner.java:150) ~[spring-boot-autoconfigure-2.7.14.jar:2.7.14]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:759) ~[spring-boot-2.7.14.jar:2.7.14]
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:749) ~[spring-boot-2.7.14.jar:2.7.14]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:314) ~[spring-boot-2.7.14.jar:2.7.14]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303) ~[spring-boot-2.7.14.jar:2.7.14]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292) ~[spring-boot-2.7.14.jar:2.7.14]
+	at com.MultiThreadedBatch.BatchApp.BatchAppApplication.main(BatchAppApplication.java:10) ~[classes/:na]
+
+2025-07-17 11:31:41.721  INFO 26120 --- [main] o.s.batch.core.step.AbstractStep         : Step: [partitionerUserStep] executed in 4s261ms
+2025-07-17 11:31:41.765  WARN 26120 --- [main] c.M.B.listener.UserTransferJobListener   : Job did not complete successfully. (ID: 15)
+2025-07-17 11:31:41.765  INFO 26120 --- [main] c.M.B.listener.UserTransferJobListener   : No active threads. Initiating thread pool shutdown.
+2025-07-17 11:31:41.766  INFO 26120 --- [main] c.M.B.listener.UserTransferJobListener   : Thread pool shutdown complete.
+2025-07-17 11:31:41.796  INFO 26120 --- [main] o.s.b.c.l.support.SimpleJobLauncher      : Job: [FlowJob: [name=userTransferJob]] completed with the following parameters: [{run.id=4}] and the following status: [FAILED] in 4s444ms
+2025-07-17 11:31:41.807  INFO 26120 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-07-17 11:31:41.814  INFO 26120 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-07-17 11:31:41.849  INFO 26120 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-07-17 11:33:30.832  INFO 23416 --- [main] c.M.BatchApp.BatchAppApplication         : Starting BatchAppApplication using Java 17.0.15 on USGURBHANPRAS68 with PID 23416 (C:\Users\bhanuprasingh\Desktop\Personal Code\BatchApp\target\classes started by bhanuprasingh in C:\Users\bhanuprasingh\Desktop\Personal Code\BatchApp)
+2025-07-17 11:33:30.837  INFO 23416 --- [main] c.M.BatchApp.BatchAppApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-07-17 11:33:31.657  INFO 23416 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-07-17 11:33:31.758  INFO 23416 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 86 ms. Found 1 JPA repository interfaces.
+2025-07-17 11:33:32.231  INFO 23416 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-07-17 11:33:32.891  INFO 23416 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-07-17 11:33:33.203  INFO 23416 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-07-17 11:33:33.365  INFO 23416 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.15.Final
+2025-07-17 11:33:33.637  INFO 23416 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2025-07-17 11:33:33.794  INFO 23416 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2025-07-17 11:33:34.548  INFO 23416 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-07-17 11:33:34.563  INFO 23416 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-07-17 11:33:35.222  WARN 23416 --- [main] o.s.b.a.batch.JpaBatchConfigurer         : JPA does not support custom isolation levels, so locks may not be taken when launching Jobs. To silence this warning, set 'spring.batch.jdbc.isolation-level-for-create' to 'default'.
+2025-07-17 11:33:35.238  INFO 23416 --- [main] o.s.b.c.r.s.JobRepositoryFactoryBean     : No database type set, using meta data indicating: MYSQL
+2025-07-17 11:33:35.553  INFO 23416 --- [main] o.s.b.c.l.support.SimpleJobLauncher      : No TaskExecutor has been set, defaulting to synchronous executor.
+2025-07-17 11:33:35.719  INFO 23416 --- [main] c.M.BatchApp.BatchAppApplication         : Started BatchAppApplication in 5.7 seconds (JVM running for 6.509)
+2025-07-17 11:33:35.722  INFO 23416 --- [main] o.s.b.a.b.JobLauncherApplicationRunner   : Running default command line with: []
+2025-07-17 11:33:36.051  INFO 23416 --- [main] o.s.b.c.l.support.SimpleJobLauncher      : Job: [FlowJob: [name=userTransferJob]] launched with the following parameters: [{run.id=5}]
+2025-07-17 11:33:36.121  INFO 23416 --- [main] c.M.B.listener.UserTransferJobListener   : Job started: userTransferJob (ID: 16)
+2025-07-17 11:33:36.122  INFO 23416 --- [main] c.M.B.listener.UserTransferJobListener   : Thread pool size: 0, Active threads: 0, Queue size: 0
+2025-07-17 11:33:36.200  INFO 23416 --- [main] o.s.batch.core.job.SimpleStepHandler     : Executing step: [partitionerUserStep]
+2025-07-17 11:33:37.788  INFO 23416 --- [threadPoolTaskExecutor-8] o.s.batch.core.step.AbstractStep         : Step: [userProcessingStep:partition4] executed in 1s219ms
+2025-07-17 11:33:37.890  INFO 23416 --- [threadPoolTaskExecutor-7] o.s.batch.core.step.AbstractStep         : Step: [userProcessingStep:partition6] executed in 1s321ms
+2025-07-17 11:33:37.900  INFO 23416 --- [threadPoolTaskExecutor-1] o.s.batch.core.step.AbstractStep         : Step: [userProcessingStep:partition8] executed in 1s333ms
+2025-07-17 11:33:37.945  INFO 23416 --- [threadPoolTaskExecutor-4] o.s.batch.core.step.AbstractStep         : Step: [userProcessingStep:partition2] executed in 1s377ms
+2025-07-17 11:33:37.960  INFO 23416 --- [threadPoolTaskExecutor-6] o.s.batch.core.step.AbstractStep         : Step: [userProcessingStep:partition1] executed in 1s391ms
+2025-07-17 11:33:37.971  INFO 23416 --- [threadPoolTaskExecutor-5] o.s.batch.core.step.AbstractStep         : Step: [userProcessingStep:partition7] executed in 1s402ms
+2025-07-17 11:33:37.982  INFO 23416 --- [threadPoolTaskExecutor-9] o.s.batch.core.step.AbstractStep         : Step: [userProcessingStep:partition9] executed in 1s412ms
+2025-07-17 11:33:38.022  INFO 23416 --- [threadPoolTaskExecutor-3] o.s.batch.core.step.AbstractStep         : Step: [userProcessingStep:partition5] executed in 1s455ms
+2025-07-17 11:33:38.022  INFO 23416 --- [threadPoolTaskExecutor-10] o.s.batch.core.step.AbstractStep         : Step: [userProcessingStep:partition0] executed in 1s451ms
+2025-07-17 11:33:38.037  INFO 23416 --- [threadPoolTaskExecutor-2] o.s.batch.core.step.AbstractStep         : Step: [userProcessingStep:partition3] executed in 1s470ms
+2025-07-17 11:33:38.082  INFO 23416 --- [main] o.s.batch.core.step.AbstractStep         : Step: [partitionerUserStep] executed in 1s881ms
+2025-07-17 11:33:38.123  INFO 23416 --- [main] c.M.B.listener.UserTransferJobListener   : Job completed successfully. (ID: 16)
+2025-07-17 11:33:38.124  INFO 23416 --- [main] c.M.B.listener.UserTransferJobListener   : No active threads. Initiating thread pool shutdown.
+2025-07-17 11:33:38.125  INFO 23416 --- [main] c.M.B.listener.UserTransferJobListener   : Thread pool shutdown complete.
+2025-07-17 11:33:38.156  INFO 23416 --- [main] o.s.b.c.l.support.SimpleJobLauncher      : Job: [FlowJob: [name=userTransferJob]] completed with the following parameters: [{run.id=5}] and the following status: [COMPLETED] in 2s35ms
+2025-07-17 11:33:38.170  INFO 23416 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-07-17 11:33:38.175  INFO 23416 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-07-17 11:33:38.206  INFO 23416 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
